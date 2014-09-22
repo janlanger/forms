@@ -13,14 +13,14 @@ class EntityFormsExtension extends CompilerExtension
         $builder = $this->getContainerBuilder();
 
         $builder->addDefinition($this->prefix('baseForm'))
-            ->setImplement('App\Forms\EntityForms\IBaseEntityFormFactory')
+            ->setImplement('QX\Forms\EntityForms\IBaseEntityFormFactory')
             ->setInject(TRUE);
 
         $builder->addDefinition($this->prefix('fieldMapper'))
-            ->setClass('App\Forms\EntityForms\FieldsMapper');
+            ->setClass('QX\Forms\EntityForms\FieldsMapper');
 
         $builder->addDefinition($this->prefix('entityMapper'))
-            ->setClass('App\Forms\EntityForms\EntityMapper');
+            ->setClass('QX\Forms\EntityForms\EntityMapper');
 
     }
 

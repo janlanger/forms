@@ -7,6 +7,7 @@ use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\PersistentCollection;
 use Kdyby\Doctrine\Entities\BaseEntity;
 use Doctrine\ORM\EntityManager;
+use Nette\Application\UI\Form;
 use Nette\Forms\Container;
 use Nette\Forms\Controls\BaseControl;
 use Nette\Forms\Controls\SubmitButton;
@@ -23,7 +24,7 @@ class FieldsMapper extends Object
     }
 
 
-    public function bindEntity(BaseEntityForm $form, $entity)
+    public function bindEntity(Form $form, $entity)
     {
         $metadata = $this->getEntityMetadata($entity);
 

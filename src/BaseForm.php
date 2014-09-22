@@ -18,8 +18,4 @@ class BaseForm extends UI\Form
 
 }
 
-interface IBaseFormFactory
-{
-    /** @return BaseForm */
-    function create();
-}
+

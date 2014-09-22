@@ -1,0 +1,19 @@
+{
+    "name": "janlanger/forms",
+    "description": "Forms extension for Nette Framework and Doctrine",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Jan Langer",
+            "email": "mail@janlanger.cz"
+        }
+    ],
+    "require": {
+        "php" : ">=5.4",
+        "nette/forms": "~2.2.0",
+        "doctrine/orm": "~2.4.0"
+    },
+    "autoload": {
+    	"psr-4":{"QX\\Forms": "src/"}
+    }
+}

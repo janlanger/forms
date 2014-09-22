@@ -3,8 +3,8 @@
 namespace QX\Forms\EntityForms;
 
 
-use Doctrine\ORM\Mapping\ClassMetadata;
 use Doctrine\ORM\EntityManager;
+use Doctrine\ORM\Mapping\ClassMetadata;
 use Nette\Object;
 
 class EntityMapper extends Object
@@ -31,8 +31,7 @@ class EntityMapper extends Object
         foreach ($values as $key => $value) {
             if (isset($mapping->associationMappings[$key])) {
                 $this->doAssociationUpdate($entity, $value, $mapping, $key);
-            }
-            else {
+            } else {
                 $this->updateScalar($entity, $key, $value);
             }
 
@@ -97,38 +96,38 @@ class EntityMapper extends Object
 
         }
 
-        if(!is_array($value)) {
+        if (!is_array($value)) {
             $value = [$value];
         }
 
         $existing = [];
 
-        foreach($entity->{'get'.$property}(TRUE) as $key => $item) {
+        foreach ($entity->{'get' . $property}(TRUE) as $key => $item) {
             $existing[$key] = $item->getId();
         }
 
         $newValues = [];
 
-        foreach($value as $key => $item) {
+        foreach ($value as $key => $item) {
             $newValues[$key] = $item->getId();
         }
         $toRemove = array_diff($existing, $newValues);
         $toAdd = array_diff($newValues, $existing);
 
         $existing = array_flip($existing);
-        foreach($toRemove as $item) {
-            $entity->{'remove'.$field}($entity->{"get".$property}(TRUE)->get($existing[$item]));
+        foreach ($toRemove as $item) {
+            $entity->{'remove' . $field}($entity->{"get" . $property}(TRUE)->get($existing[$item]));
         }
 
-        foreach($toAdd as $item) {
-            $entity->{'add'.$field}($value[$item]);
+        foreach ($toAdd as $item) {
+            $entity->{'add' . $field}($value[$item]);
         }
 
     }
 
     private function updateScalar($entity, $key, $value)
     {
-        $entity->{'set'.$key}($value);
+        $entity->{'set' . $key}($value);
     }
 
 } 

@@ -4,9 +4,9 @@ namespace QX\Forms\EntityForms;
 
 
 use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\PersistentCollection;
 use Kdyby\Doctrine\Entities\BaseEntity;
-use Doctrine\ORM\EntityManager;
 use Nette\Application\UI\Form;
 use Nette\Forms\Container;
 use Nette\Forms\Controls\BaseControl;
@@ -57,7 +57,7 @@ class FieldsMapper extends Object
     private function doBind($components, $metadata, $entity)
     {
         foreach ($components as $name => $input) {
-            if($input instanceof SubmitButton) {
+            if ($input instanceof SubmitButton) {
                 continue;
             } elseif ($input instanceof Container) {
                 $value = $this->getFieldValue($metadata, $name, $entity);

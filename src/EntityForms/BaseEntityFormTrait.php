@@ -1,16 +1,13 @@
 <?php
 
 
-namespace App\Forms\EntityForms;
+namespace QX\Forms\EntityForms;
 
-use App\Forms\BaseForm;
-use Doctrine\ORM\EntityManager;
-use Doctrine\ORM\Mapping\ClassMetadata;
+
 use Nette\Forms\Controls\SubmitButton;
 
-class BaseEntityForm extends BaseForm
+trait BaseEntityFormTrait
 {
-
     private $entity;
 
     public $onBind = [];
@@ -77,10 +74,4 @@ class BaseEntityForm extends BaseForm
         $this->entityMapper = $entityMapper;
     }
 
-}
-
-interface IBaseEntityFormFactory
-{
-    /** @return \App\Forms\EntityForms\BaseEntityForm */
-    public function create();
-}
+} 

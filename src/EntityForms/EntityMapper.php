@@ -1,16 +1,10 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Jan
- * Date: 21. 8. 2014
- * Time: 12:52
- */
 
-namespace App\Forms\EntityForms;
+namespace QX\Forms\EntityForms;
 
 
 use Doctrine\ORM\Mapping\ClassMetadata;
-use Kdyby\Doctrine\EntityManager;
+use Doctrine\ORM\EntityManager;
 use Nette\Object;
 
 class EntityMapper extends Object

@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Forms\EntityForms;
+namespace QX\Forms\EntityForms;
 
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\PersistentCollection;
 use Kdyby\Doctrine\Entities\BaseEntity;
-use Kdyby\Doctrine\EntityManager;
+use Doctrine\ORM\EntityManager;
 use Nette\Forms\Container;
 use Nette\Forms\Controls\BaseControl;
 use Nette\Forms\Controls\SubmitButton;

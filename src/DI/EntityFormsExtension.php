@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Forms\EntityForms;
+namespace QX\Forms\DI;
 
 
 use Nette\DI\CompilerExtension;

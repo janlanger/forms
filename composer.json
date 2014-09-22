@@ -1,7 +1,11 @@
 {
-    "name": "janlanger/forms",
+    "name": "quinix/forms",
+    "type": "library",
     "description": "Forms extension for Nette Framework and Doctrine",
-    "minimum-stability": "stable",
+    "license": ["MIT", "GPL-2.0", "GPL-3.0"],
+    "support": {
+        "issues": "https://github.com/janlanger/forms/issues"
+    },
     "authors": [
         {
             "name": "Jan Langer",
@@ -10,10 +14,24 @@
     ],
     "require": {
         "php" : ">=5.4",
-        "nette/forms": "~2.2.0",
-        "doctrine/orm": "~2.4.0"
+        "nette/forms": "~2.2.0@dev",
+        "doctrine/orm": "~2.4.0@dev",
+        "kdyby/translation": "~2.0@dev"
+    },
+    "require-dev": {
+        "nette/nette": "~2.2.0@dev"
+    },
+    "suggest": {
+        "kdyby/doctrine": "Doctrine integration to Nette",
+        "nextras/forms": "Great nette forms components",
+        "":""
     },
     "autoload": {
-    	"psr-4":{"QX\\Forms": "src/"}
+    	"psr-4": {
+            "QX\\Forms\\": "src/"
+        },
+        "classmap": [
+            "src/exceptions.php"
+        ]
     }
 }

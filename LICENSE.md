@@ -1,4 +1,12 @@
+Licenses
+========
+
+Good news! You may use this package under the terms of either
+the MIT license or the GNU General Public License (GPL) version 2 or 3.
+
+
 The MIT License (MIT)
+---------------------
 
 Copyright (c) 2014 Jan Langer
 
@@ -19,3 +27,15 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+
+
+GNU General Public License
+--------------------------
+
+GPL licenses are very very long, so instead of including them here we offer
+you URLs with full text:
+
+- [GPL version 2](http://www.gnu.org/licenses/gpl-2.0.html)
+- [GPL version 3](http://www.gnu.org/licenses/gpl-3.0.html)
+

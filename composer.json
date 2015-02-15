@@ -14,17 +14,16 @@
     ],
     "require": {
         "php" : ">=5.4",
-        "nette/forms": "~2.2.0@dev",
-        "doctrine/orm": "~2.4.0@dev",
+        "nette/forms": "~2.2@dev",
+        "doctrine/orm": "~2.4@dev",
         "kdyby/translation": "~2.0@dev"
     },
     "require-dev": {
-        "nette/nette": "~2.2.0@dev"
+        "nette/nette": "~2.2@dev"
     },
     "suggest": {
         "kdyby/doctrine": "Doctrine integration to Nette",
-        "nextras/forms": "Great nette forms components",
-        "":""
+        "nextras/forms": "Great nette forms components"
     },
     "autoload": {
     	"psr-4": {
